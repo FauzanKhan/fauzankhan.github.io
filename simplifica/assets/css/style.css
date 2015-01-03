@@ -67,7 +67,7 @@ a:hover{
 	}
 #primary_nav li:hover a{
 	color:#FFF;
-	border-bottom:1px solid #FFF;
+	border-bottom:1px solid #6A6A6A;
 	-webkit-transition:all 900ms ease-in-out;
 	-moz-transition:all 900ms ease-in-out;
 	transition:all 900ms, border-bottom ease-in-out;
@@ -85,6 +85,7 @@ a:hover{
 	-o-background-size: cover;
 	background-size: cover;
     width: 100%;
+	position:relative;
 	}
 .intro_wrapper .container{
 	position:relative;
@@ -148,6 +149,101 @@ a:hover{
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
 	}
+.form_container{
+	text-align:center;
+	position: relative;
+	top: 35%;
+	margin-bottom:40px;
+	transform:translateY(-30%);
+	}
+.form_container p{
+	font-size:22px;
+	margin-bottom:30px;
+	}
+.form_container .form_content{
+	width:100%;
+	text-align:center;
+	}
+.form_container .form_content form{
+	width:420px;
+	text-align:left;
+	margin:0 auto;
+	}
+.form_container .form_content input{
+	border-radius:0px;
+	background:rgba(0,0,0,.2);
+	border-color:#6A6A6A;
+	color:#EEE;
+	font-weight:bold;
+	}
+.introduction, .signup_form_container, .login_form_container, .forgot_password_form_container{
+	display:none;
+	overflow:hidden;
+	}
+.curr_active{
+	display:block;
+	}
+.form_container .form_content  select{
+	border-radius:0px;
+	background:rgba(0,0,0,.2);
+	border-color:#6A6A6A;
+	font-weight:bold;
+	color:#EEE;}
+.form_container .form_content  select option{
+	background:rgba(0,0,0,.6);
+	}
+.form_container .form_content .btn{
+	background:rgba(0,0,0,0.2);
+	color:#FFF;
+	position:relative;
+	border-radius:0px;
+	border-color:#6A6A6A;
+	float:right;
+	}
+.forgot_pass_link, .redirect_links{
+	float:left;
+	color:#CCC;
+	}
+.forgot_pass_link a, .redirect_links a{
+	color:#CCC;
+	}
+.login_form_container .login_form .btn{
+	background:rgba(0,0,0,0.2);
+	color:#FFF;
+	position:relative;
+	border-radius:0px;
+	border-color:#6A6A6A;
+	float:right;
+	}
+.form_container .form_content .btn .hover_span{
+	height:100%;
+	width:0px;
+	background:rgba(63, 183, 121, .8);
+	top:0px;
+	left:0px;
+	position:absolute;
+	z-index:-1;
+	-webkit-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	transition:all 300ms ease;
+	}
+.form_container .form_content label{
+	font-weight:bolder;
+	font-size:15px;
+	} 
+.form_container .form_content .btn:hover span.hover_span{
+	width:100%;
+	-webkit-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	transition:all 300ms ease;
+	}
+.form_container .form_content span.forgot_password_note{
+	margin-top:-20px;
+	margin-bottom:20px;
+	}
+footer .container{
+	position:relative;
+	}
 .copyright{
 	position:absolute;
 	left:0;
@@ -160,6 +256,7 @@ a:hover{
 	position:absolute;
 	bottom:20px;
 	display:inline;
+	text-align:center;
 	padding:0px;
 	}
 .social_links div{
@@ -176,7 +273,7 @@ a:hover{
 	z-index:2;
 	margin-top:5px;
 	background:rgba(0,0,0,0.2);
-	border:1px solid rgb(204, 204, 204);
+	border:1px solid #6A6A6A;/*rgb(204, 204, 204);*/
 	}
 .social_links div a span{
 	width:100%;
@@ -202,4 +299,37 @@ a:hover{
 	background:rgba(85, 172, 238,0.8);
 	}
 .li_hover_span{
-	background:rgba(0, 115, 178,0.8);}
+	background:rgba(0, 115, 178,0.8);
+	}
+@media all and (max-width:420px){
+		.form_container{
+			width:270px;
+			text-align:center;
+			}
+		.form_container div,.form_container input, .form_container select{
+			width:270px;
+			}
+		.form_container .redirect_links, .form_container .btn{
+			display:block;
+			float:left;
+			width:270px;
+			clear:both;
+			}
+		.form_container .btn{
+			float:left;
+			width:480px;}
+	}
+.form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #AEAEAE;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #AEAEAE;
+   opacity:  1;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #AEAEAE;
+   opacity:  1;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #AEAEAE;
+}

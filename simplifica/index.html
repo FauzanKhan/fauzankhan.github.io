@@ -9,16 +9,16 @@
 </head>
 <body>
 	<header>
-        <nav class="navbar navbar-default navbar-fixed-top animated fadeInDown">
+        <nav class="navbar navbar-default navbar-fixed-top">
         	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_nav">
             	<span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <div class="container">
-                <h1 class="navbar-brand"><a href="#"><span>S</span>implifica</a></h1>
+                <h1 class="navbar-brand"><a href="index.html"><span>S</span>implifica</a></h1>
                 <ul class="nav navbar-nav collapse navbar-collapse navbar-responsive-collapse navbar-right" id="primary_nav">
-                	<li>
+                	<!--<li>
                     	<a href="#">About Simplifica</a>
                         <span></span>
                     </li>
@@ -33,9 +33,9 @@
                     <li>
                     	<a href="#">Contact Us</a>
                         <span></span>
-                    </li>
+                    </li>-->
                     <li>
-                    	<a href="#"><b>LogIn</b></a>
+                    	<a href="#" class="login_link"><b>LogIn</b></a>
                         <span></span>
                     </li>
                 </ul>
@@ -45,20 +45,146 @@
     <div class="intro_wrapper window_span">
         <div class="intro_wrapper_overlay window_span"></div>
         <div class="container">
-        		<div class="introduction">
+        		<div class="introduction curr_active">
                 	<p class="animated zoomIn">We are making the process of placements easier</p><br />
-                	<a href="#" class="btn btn-lg btn-default student_sign_up animated fadeInDown"></span><span class="sign_hover_span"></span>SignUp as Student</a><br /><br />
-                	<a href="#" class="btn btn-lg btn-default college_sign_up animated fadeInUp"><span class="sign_hover_span"></span>SignUp as College</a>
+                	<a href="#" class="student_signup_link btn btn-lg btn-default student_sign_up animated fadeInDown"></span><span class="sign_hover_span"></span>SignUp as Student</a><br /><br />
+                	<a href="#" class="college_signup_link btn btn-lg btn-default college_sign_up animated fadeInUp"><span class="sign_hover_span"></span>SignUp as College</a>
             	</div>
-                <div class="copyright animated fadeInUp">copyright &copy; simplifica.com</div>
-                <div class="social_links animated fadeInUp">
-                	<p>Follow Us On</p>
-                	<div class="fb"><a href="#">b<span class="fb_hover_span"></span></a></div>
-                    <div class="tw"><a href="#">a<span class="tw_hover_span"></span></a></div>
-                    <div class="li"><a href="#">j<span class="li_hover_span"></span></a></div>
+                <div class="login_form_container form_container">
+                    <div class="login_form form_content animated flipInX">
+                    	<p>LogIn to your account</p>
+                        <form>
+                            <div class="form-group">
+                                <label class="control-label">Username/Email</label>
+                                <input type="email" class="form-control" placeholder="Eg.: username@example.com" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Password</label>
+                                <input type="password" class="form-control" placeholder="Your Password"/>
+                            </div>
+                            <div class="redirect_links">
+                            	<a href="#" class="forgot_password_link">Forgot Password?</a> <br/> 
+                                <a href="#" class="college_signup_link">Sign Up as College</a> | 
+                                <a href="#" class="student_signup_link">Sign Up as Student</a>
+                            </div>
+                            <a class="btn btn-lg btn-default" type="submit"><span class="hover_span"></span><b>LogIn</b></a>
+                        </form>
+                   </div>
+                </div>
+                <div class="signup_form_container student_signup form_container">
+                    <div class="signup_form form_content animated flipInX">
+                    	<p>SignUp as Student</p>
+                        <form>
+                            <div class="form-group">
+                                <label class="control-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Eg.: username@example.com" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Full Name</label>
+                                <input type="name" class="form-control" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">College</label>
+                                <select class="form-control">
+                                	<option>IEC College of Engineering and Technology</option>
+                                	<option>IEC College of Engineering and Technology</option>
+                                	<option>IEC College of Engineering and Technology</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                            	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                	<div class="form-group">
+                                        <label class="control-label">Course</label>
+                                        <select class="form-control">
+                                            <option>B.Tech/B.E.</option>
+                                            <option>M.Tech/M.E.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                	<div class="form-group">
+                                        <label class="control-label">Branch</label>
+                                        <select class="form-control">
+                                            <option>CS/IT</option>
+                                            <option>ECE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Password</label>
+                                <input type="password" class="form-control" placeholder="Your profile password" />
+                            </div>
+                            <div class="redirect_links">
+                            	<a href="#" class="college_signup_link">SignUp as College</a> | 
+                                <a href="#" class="login_link">Already Signed Up?</a>
+                            </div>
+                            <a class="btn btn-lg btn-default sign_up_btn" type="submit"><span class="hover_span"></span><b>SignUp</b></a>
+                        </form>
+                   </div>
+                </div>
+                <div class="signup_form_container college_signup form_container">
+                    <div class="signup_form form_content animated flipInX">
+                    	<p>SignUp as College/TPO</p>
+                        <form>
+                            <div class="form-group">
+                                <label class="control-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Eg.: username@example.com" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Full Name</label>
+                                <input type="name" class="form-control" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">College</label>
+                                <select class="form-control">
+                                	<option>IEC College of Engineering and Technology</option>
+                                	<option>IEC College of Engineering and Technology</option>
+                                	<option>IEC College of Engineering and Technology</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Password</label>
+                                <input type="password" class="form-control" placeholder="Your Profile Password"/>
+                            </div>
+                            <div class="redirect_links">
+                            	<a href="#" class="student_signup_link">SignUp as Student</a> | 
+                                <a href="#" class="login_link">Already Signed Up?</a>
+                            </div>
+                            <a class="btn btn-lg btn-default sign_up_btn" type="submit"><span class="hover_span"></span><b>SignUp</b></a>
+                        </form>
+                   </div>
+                </div>
+                <div class="forgot_password_form_container form_container">
+                    <div class="login_form form_content animated flipInX">
+                    	<p>Forgot Password?</p>
+                        <span class="forgot_password_note">Just Enter your Email below and we'll send you instructions on how to reset your password</span><br/><br/>
+                        <form>
+                            <div class="form-group">
+                                <label class="control-label">Username/Email</label>
+                                <input type="email" class="form-control" placeholder="Eg.: username@example.com" />
+                            </div>
+                            <div class="redirect_links">
+                            	<a href="#" class="login_link">Log In</a> <br/> 
+                                <a href="#" class="college_signup_link">Sign Up as College</a> |  
+                                <a href="#" class="student_signup_link">Sign Up as Student</a>
+                            </div>
+                            <a class="btn btn-md btn-default" type="submit"><span class="hover_span"></span><b>Reset Password</b></a>
+                        </form>
+                   </div>
                 </div>
        </div>
     </div>
+    <footer>
+    	<div class="container">
+            <div class="copyright">copyright &copy; simplifica.com</div>
+            <div class="social_links">
+                <p>Follow Us On</p>
+                <div class="fb"><a href="#">b<span class="fb_hover_span"></span></a></div>
+                <div class="tw"><a href="#">a<span class="tw_hover_span"></span></a></div>
+                <div class="li"><a href="#">j<span class="li_hover_span"></span></a></div>
+            </div>
+    </footer>
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>

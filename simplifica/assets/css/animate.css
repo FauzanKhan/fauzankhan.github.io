@@ -486,8 +486,8 @@ Copyright (c) 2014 Daniel Eden
   }
 
   20% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-            transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
   }
 
   40% {
@@ -497,8 +497,8 @@ Copyright (c) 2014 Daniel Eden
 
   60% {
     opacity: 1;
-    -webkit-transform: scale3d(1.03, 1.03, 1.03);
-            transform: scale3d(1.03, 1.03, 1.03);
+    -webkit-transform: scale3d(1.01, 1.01, 1.01);
+            transform: scale3d(1.01, 1.01, 1.01);
   }
 
   80% {
