@@ -32,14 +32,14 @@ $(document).ready(function(){
 		scrolled = $(document).scrollTop();
 		if(scrolled > 300){
 			$('nav').addClass('hover_nav');
-			$('#primary_nav').css('background', 'rgba(240,78,60,.4)');
+			$('#primary_nav').css('background', 'rgba(29, 54, 93, .4)');
 			$('.back_to_top').fadeIn();
-			}
+		}
 		else{
 			$('nav').removeClass('hover_nav');
-			$('#primary_nav').css('background', 'rgba(240,78,60,0)');
+			$('#primary_nav').css('background', 'rgba(29, 54, 93, 0)');
 			$('.back_to_top').fadeOut();
-			}
+		}
 	});
 
 	$(function() {

@@ -8,6 +8,7 @@
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
@@ -22,7 +23,7 @@
                 <ul class="navigation nav navbar-nav nav-menu collapse navbar-collapse pull-right">
                     <li><a href="#slide2">Portfolio</a></li>
                     <li><a href="#slide3">About</a></li>
-                    <li><a href="https://www.dropbox.com/s/ia1702iqi0gpz7j/FauzanKhanResume.pdf?dl=0" target="_blank">Resume</a></li>
+                    <li><a href="https://www.dropbox.com/s/m5yp9he80ad2k5h/FauzanKhanResume.pdf?dl=0" target="_blank">Resume</a></li>
                     <li><a href="#slide4">Contact</a></li>
                 </ul>
             </div>
@@ -38,7 +39,7 @@
                     <a href="#slide2" class="next_slide" title=""><span class="fa  fa-angle-down"></span></a>
             </div>
             <div class="slide" id="slide2" data-stellar-background-ratio=".5">
-                	<h3>Things I've <strike>made</strike> learnt from<br /><small>My journey from an amateur to a professional . from a noob to a geek</small></h3>
+                	<h3>Things I've <span class="faded-text">made,</span> learnt from<br /><small>My journey from an amateur to a professional . from a noob to a geek</small></h3>
                     <a href="#slide3" class="next_slide" title=""><span class="fa  fa-angle-down"></span></a>
                     <div class="projects_wrapper">
                     	<a href="http://venuemonk.com">
@@ -83,22 +84,32 @@
                        	</a>
                     </div>
             </div>
-             <div class="slide" id="slide3" data-stellar-background-ratio=".5" data-stellar-vertical-offset="-1200">
-                <div class="container">
-                	<h3>Something about me</h3><br/>
+             <div class="slide" id="slide3" data-stellar-background-ratio="0" data-stellar-vertical-offset="-1200">
+                <div class="about_overlay"></div>
+                <div class="container about_me_container">
+                	<h3>Something about me<br /><small>I Love Developing Clean & Elegant Interfaces</small></h3>
                     <div class="about_me">
-                    	"A few years ago, a time and a world ago,<br/> when a kid had no idea about what to do and where to go,<br/> when everyone around him was pursing their dreams,<br/> what he wanted to do with his life, he was yet to know.<br />
+                    	<!-- "A few years ago, a time and a world ago,<br/> when a kid had no idea about what to do and where to go,<br/> when everyone around him was pursing their dreams,<br/> what he wanted to do with his life, he was yet to know.<br />
                         He was just another teen, exploring all his options on a 'machine'.<br/> It was then that he realized about the beauty on the screen<br/> and he came to know what he wanted to be."<br/><br/>
-                        Hello! and welcome to my site. My name is Fauzan, I'm a web developer by profession and well.. a web developer by choice. I've this constant itch to keep innovating and to keep doing something new. This unarguable itch has brought me into a profession that pushes me to keep learning something new, to develop something exciting from what I've learnt and as the people at McDonald's would say, "I'm lovin' it". Every now and then, people (icluding me) fall in love with everything I develop and go absolutely crazy about my awesome design sense and not to forget my creativity!                        
+                        Hello! and welcome to my site. My name is Fauzan, I'm a web developer by profession and well.. a web developer by choice. I've this constant itch to keep innovating and to keep doing something new. This unarguable itch has brought me into a profession that pushes me to keep learning something new, to develop something exciting from what I've learnt and as the people at McDonald's would say, "I'm lovin' it". Every now and then, people (icluding me) fall in love with everything I develop and go absolutely crazy about my awesome design sense and not to forget my creativity! --> 
+                        <p class="hello">Bonjour!</p>
+                        <p>My name is Fauzan, a <span class="highlight-lg">Front End Developer</span> based out of Delhi, India.
+                        I have been <span class="highlight-sm">designing & developing web apps for more than a year</span> now. During this time frame, I have worked on tons of different, cutting edge technologies such as <span class-"highlight-sm">HTML5</span>, <span class="highlight-md">CSS3</span>, <span class="highlight-lg">JavaScript</span>, <span class="highlight-lg">Ruby</span>, Python, <span class="highlight-md">jQuery</span>, <span class="highlight-lg">Angular.js</span>, <span class="highlight-sm">D3.js</span>, <span class="highlight-lg">Bootstrap 3</span>, <span class="highlight-sm">Foundation 5</span>, <span class="highlight-md"></span><span class="highlight-lg">SASS</span>, <span class="highlight-sm">LESS</span>, <span class="highlight-md">Rails</span>, flask etc.</span></p>
+                        <p>
+                          Right now, i'm <span class="highlight-lg">working on data visualization</span> and trying to make sense out of every bit of data that I get. I'm <span class="highlight-sm">highly opinionated</span> about every tech stack that I use and I strongly believe that <span class="highlight-md">every tech stack has its own use case</span>.   
+                        </p>
+                        <p>
+                            I <span class="highlight-lg">love what I do</span> and I fall will in love with almost everything that I build. I'm always on the lookout to <span class="highlight-lg">contribute to something meaningful</span>, something that can impact lives of people around the globe.
+                        </p>                     
                     </div>
-                   <a href="#slide4" class="next_slide" title=""><span class="fa  fa-angle-down"></span></a>
                 </div>
+                <a href="#slide4" class="next_slide" title=""><span class="fa  fa-angle-down"></span></a>
             </div>
              <div class="slide" id="slide4" data-stellar-background-ratio=".5" data-stellar-vertical-offset="-400%">
             	<div class="contact_overlay"></div>
                 <div class="contact_wrapper">
                     <div class="container">
-                        <h3>Get in touch with me</h3>
+                        <h3>Get in touch with me<br/><small>I'd love to hear from you</small></h3>
                         <div class="contact_form">
                         	<form>
                             	<div class="form-group">
@@ -121,7 +132,9 @@
                         	<p>Find me on</p>
                             <a href="http://facebook.com/khan.fauzan/" target="_blank" class="fb"><span class="fa fa-facebook"></span></a>
                             <a href="https://twitter.com/FauzanKhan" target="_blank" class="tw"><span class="fa fa-twitter"></span></a>
+                            <a href="skype:khan.fauzan.93?chat" target="_blank" class="sk"><span class="fa fa-skype"></span></a>
                             <a href="http://in.linkedin.com/in/fauzank/" target="_blank" class="li"><span class="fa fa-linkedin"></span></a>
+                            <a href="http://codepen.io/FauzanKhan/" target="_blank" class="cp"><span class="fa fa-codepen"></span></a>
                             <a href="http://github.com/fauzankhan/" target="_blank" class="gh"><span class="fa fa-github"></span></a>
                         </div>
                     </div>

@@ -8,6 +8,7 @@
   src:url(../fonts/idealist.ttf); 
 }
 
+$primary-color: rgb(29, 54, 93);
 
 html, body{
 	font-family: idealist, tahoma;
@@ -17,7 +18,7 @@ html, body{
 	margin:0px;
 	}
 .hover_nav{
-	box-shadow:1px 1px 6px rgba(240,78,60,.6);	
+	box-shadow:1px 1px 6px rgba(29, 54, 93, .6);	
 	}
 #overlay{
 	width:100%;
@@ -30,7 +31,7 @@ nav#primary_nav{
 	.navbar-toggle{
 		border-radius:0px;
 		border-color:#FFF;
-		background:rgba(240,78,60,.9);
+		background:rgba(29, 54, 93,.9);
 		
 		span.icon-bar{
 			color:#FFF;
@@ -71,7 +72,7 @@ nav#primary_nav{
 				font-weight:bold;
 			}
 			a:hover{
-					background:rgba(240,78,60,1);
+					background:rgba(29, 54, 93, 1);
 					}
 				}
 		}
@@ -93,9 +94,12 @@ nav#primary_nav{
 			font-size:48px;
 			text-align:center;
 			margin-top:48px;
+			.faded-text{
+				opacity: .4;
+			}
 			
 			small{
-				font-size:32px;
+				font-size:28px;
 			}
 		}
 		
@@ -121,7 +125,7 @@ nav#primary_nav{
 				}
 			}
 		.next_slide:hover{
-			background:rgba(240,78,60,.9);
+			background:rgba(29, 54, 93, .9);
 			margin-bottom:-10px;
 			-webkit-transition:background,margin-bottom 500ms ease;
 			transition:background,margin-bottom 500ms ease;
@@ -155,30 +159,29 @@ nav#primary_nav{
 						}
 			}
 			.back_to_top:hover{
-				background:rgba(240,78,60,.9);
+				background:rgba(29, 54, 93, .9);
 				-webkit-transition:background 500ms ease;
 				transition:background 500ms ease;
 			}
 		}
 	}
 #slide1{
-	background:url('../img/1.jpg');
+	background:url('../img/workspace2.jpg');
 	background-size:cover;
 	-webkit-background-size:cover;
 	moz-background-size:cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	text-align:center;
-	
 		.intro_overlay{
 			position:absolute;
 			top:0;
 			left:0;
 			height:100%;
 			width:100%;
-			background:rgb(240,78,60);
-			opacity:.7;
-			-webkit-filter:blur(5px);
+			background:$primary-color;
+			opacity:.8;
+			-webkit-filter:blur(15px);
 			}
 			
 		.intro_content{
@@ -279,7 +282,7 @@ nav#primary_nav{
 		
 		.project_info{
 			position:absolute;
-			background:rgba(240, 78, 60, 0.8);
+			background:rgba(29, 54, 93, .9);
 			height:100%;
 			width:100%;
 			text-align:center;
@@ -324,22 +327,69 @@ nav#primary_nav{
 			}
 }
 #slide3{
-	background:rgb(240,78,60);
+	/*background:lighten($primary-color, 2%);*/
+	background: url('../img/me2.jpg');
 	background-size:cover;
 	moz-background-size:cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	position:relative;
 	color:#FFF;	
-	
 	.about_me{
 		text-align:left;
 		line-height:150%;
 		font-size:18px;
+		p{
+			line-height: 30px;
+			word-spacing: 4px;
+			letter-spacing: .4px;
+			margin-top: 20px;
+		}
+		p.hello{
+			font-size: 26px;
+		}
+		.highlight-lg{
+			/*font-size: 24px;*/
+			/*background: rgba(255, 255, 162, 1);*/
+			background: rgba(250,250, 250, 1);
+			color: #333;
+		}
+		.highlight-md{
+			/*font-size: 23px;*/
+			background: rgba(250,250, 250, 1);
+			color: #333;
+		}
+		.highlight-sm{
+			/*font-size: 20px;*/
+			background: rgba(250,250, 250, .9);
+			color: #444;
+		}
 	}
+	.about_me_container{
+		z-index:2;
+		position: relative;
 	}
+	h3 small{
+		color: #FFF;
+		opacity: .7;
+	}
+	.next_slide{
+		z-index: 2;
+	}
+	.about_overlay{
+		background: linear-gradient(-45deg, rgba(79, 100, 141, .2) 0%, rgba(79, 100, 141, .5) 10%, rgba(79, 100, 141, .9) 30%, #222 100%);
+		opacity:.95;
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:1;
+	}
+}
 #slide4{
-	background:url('../img/2.jpg');
+	background-color: $primary-color;
+	background-image:url('../img/world.png');
 	background-size:cover;
 	-webkit-background-size:cover;
 	moz-background-size:cover;
@@ -349,7 +399,8 @@ nav#primary_nav{
 	color:#FFF;
 	
 	.my_note{
-		background:rgba(240, 78, 60, 0.4);
+		background:rgba(20, 20, 20, .2);
+		border-top: 1px solid darken($primary-color, 5%);
 		color:#FFF;
 		position:absolute;
 		bottom:0px;
@@ -357,9 +408,13 @@ nav#primary_nav{
 		text-align:center;
 		z-index:9;
 	}
+	h3 small{
+		color: #FFF;
+		opacity: .6;
+	}
 	.contact_overlay{
-		background:rgb(180,60,0);
-		opacity:.3;
+		/*background:$primary-color;
+		opacity:.8;*/
 		width:100%;
 		height:100%;
 		position:absolute;
@@ -373,11 +428,11 @@ nav#primary_nav{
 		
 		.contact_form{
 			text-align:left;
-			
+			margin-top: 15px;
 			.form-control{
 				border-radius:0px;
-				background:rgba(20,20,20,.5);
-				border:1px solid #333;
+				background:rgba(20,20,20,.2);
+				border:1px solid darken($primary-color, 5%);
 				color:#FFF;
 				font-weight:bold;
 				height:45px;
@@ -387,8 +442,8 @@ nav#primary_nav{
 				}
 			.btn{
 				border-radius:0px;
-				background:rgba(20,20,20,.5);
-				border:1px solid #333;
+				background:rgba(20,20,20,.2);
+				border:1px solid darken($primary-color, 5%);
 				color:#FFF;
 				}
 			.btn:hover{
@@ -406,8 +461,8 @@ nav#primary_nav{
 				width:50px;
 				display:inline-block;
 				border-radius:100%;
-				background:rgba(20,20,20,.5);
-				border:1px solid #333;
+				background:rgba(20,20,20, .2);
+				border:1px solid darken($primary-color, 5%);
 				-webkit-transition:all 500ms ease;
 				transition:all 500ms ease;
 				
@@ -435,6 +490,20 @@ nav#primary_nav{
 				-moz-transition:all 900ms ease;
 				transition:all 900ms ease;
 				}
+			.sk:hover{
+				border-color:darken(#00AFF0, 20%);
+				background: #00AFF0;
+				-webkit-transition:background 900ms linear;
+				-moz-transition:all 900ms ease;
+				transition:all 900ms ease;
+			}
+			.cp:hover{
+				border-color:darken(#4D4D50, 20%);
+				background: #4D4D50;
+				-webkit-transition:background 900ms linear;
+				-moz-transition:all 900ms ease;
+				transition:all 900ms ease;
+			}
 			.tw:hover{
 				border-color:darken(#4099ff, 20%);
 				background:#4099ff;
