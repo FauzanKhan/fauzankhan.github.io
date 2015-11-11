@@ -627,3 +627,16 @@ nav#primary_nav{
             transform: none;
   }
 }
+
+::-webkit-scrollbar {
+      width:  5px;
+      height: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: lighten($primary-color, 5%);
+  }
+
+  ::-webkit-scrollbar-track {
+      background: rgba(29, 54, 93, .4);
+  }
