@@ -3,9 +3,9 @@ $(document).ready(function(){
 	var window_height = $(window).height();
 	var window_width =  $(window).width();
 	if(window_height >= 540)
-		$('.slide').css('height', window_height+'px');
+		$('.slide').not('#slide4').css('height', window_height+'px');
 	else{
-		$('.slide').css('height', '900px');
+		$('.slide').not('#slide4').css('height', '900px');
 		$('#slide1').css('height', '700px');
 	}
 	if(window_width <= 520)
@@ -16,7 +16,7 @@ $(document).ready(function(){
 		window_height = $(window).height();
 		window_width =  $(window).width();
 		if(window_height >= 540)
-			$('.slide').css('height', window_height+'px');
+			$('.slide').not('#slide4').css('height', window_height+'px');
 		else{
 			$('.slide').css('height', '900px');
 			$('#slide1').css('height', '700px');

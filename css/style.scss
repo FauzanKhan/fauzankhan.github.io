@@ -1,3 +1,19 @@
+$border-gray: #EAEAEA;
+$gray-shadow: #FAFAFA;
+$white: #FFF;
+$fg-black: #444;
+$fg-gray: #AAA;
+$orange-shadow: lighten(rgba(29, 54, 93,.1), 10%);
+$primary-font: 'Source Sans Pro', idealist;
+$primary-blue: lighten(rgb(29, 54, 93), 10%);
+$node-shadow: lighten(rgba(29, 54, 93,.1), 10%);;
+@mixin transition($props: all, $timing: 500ms, $easing: ease){
+	-webkit-transition: $props $timing  $easing;
+	-moz-transition: $props $timing  $easing;
+	-ms-transition: $props $timing  $easing;
+	-o-transition: $props $timing  $easing;
+	transition: $props $timing  $easing;
+}
 @font-face {
   font-family: adventuring;
   src:url(../fonts/metropolis.otf); 
@@ -388,6 +404,249 @@ nav#primary_nav{
 	}
 }
 #slide4{
+	padding-bottom: 0px;
+	height: 840px;
+	a.next_slide{
+		z-index: 10;
+	}
+	.skills-wrapper{
+		overflow: hidden;
+	}
+	.skills-circles {
+		position: relative;
+		height: 640px;
+		width: 100%;
+		font-family: $primary-font;
+		a{
+			.fa{
+			    margin-left: 4px;
+				vertical-align: 0px;
+			}
+		}
+		.point {
+			height: 20px;
+			width: 20px;
+			border-radius: 20px;
+			background: $primary-blue;
+			box-shadow: 0 0 0 15px $node-shadow;
+			display: inline-block;
+			overflow: visible;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -2em;
+			z-index: 9;
+			@include transition(box-shadow, 200ms, linear);
+			&:hover{
+				box-shadow: 0 0 0 24px $node-shadow;
+			}
+			&.point-1 {
+				transform: translate(25.5em);
+			}
+			&.point-2 {
+				transform: translate(-22.9em);
+			}
+			&.point-3 {
+				transform: translate(1em, -10.0em);
+			}
+			&.point-4 {
+				transform: translate(-26.5em, 10.5em);
+			}
+			&.point-5 {
+				transform: translate(29.5em, 11em);
+			}
+			.content {
+				position: relative;
+			}
+			.tooltip {
+				position: relative;
+			}
+			.content-tooltip {
+				position: absolute;
+				height: 90px;
+				width: 250px;
+				top: -130px;
+				left: -117px;
+				// border: 1px solid $red;
+				border: 1px solid $border-gray;
+				box-shadow: 0 0 10px 2px $gray-shadow;
+				background: $white;
+				.tootip-body {
+					position: relative;
+					padding: 20px 10px;
+					text-align: center;
+					.feature-name {
+						color: $fg-black;
+						font-size: 20px;
+						font-weight: 300;
+						margin-bottom: 0;
+						line-height: 25px;
+					}
+					a {
+						font-size: 14px;
+						font-weight: 300;
+					}
+				}
+				&:before {
+					position: absolute;
+					content: ' ';
+					bottom: -10px;
+					left: 115px;
+					border-top: 10px solid $white;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					z-index: 9;
+				}
+				&:after {
+					position: absolute;
+					content: ' ';
+					bottom: -11px;
+					left: 114px;
+					border-top: 11px solid $border-gray;
+					border-left: 11px solid transparent;
+					border-right: 11px solid transparent;
+					z-index: 8;
+				}
+			}
+		}
+		.circle {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: inline-block;
+			margin: auto;
+			border: 1px solid $border-gray;
+			border-bottom: 1px solid transparent;
+			.content-wrapper {
+				position: relative;
+				text-align: center;
+				height: 100%;
+				border-radius: inherit;
+				h6 {
+					font-family: $primary-font;
+					font-size: 20px;
+					color: $fg-black;
+					padding-top: 30px;
+					font-weight: 300;
+					line-height: 26px;
+					strong {
+						font-weight: 500;
+					}
+				}
+				a {
+					font-size: 14px;
+				}
+			}
+			&.circle-3 {
+				height: 480px;
+				width: 960px;
+				border-radius: 480px 480px 0 0;
+				z-index: 1;
+			}
+			&.circle-2 {
+				height: 360px;
+				width: 720px;
+				border-radius: 480px 480px 0 0;
+				z-index: 2;
+				.content-wrapper .circle-heading {
+					padding-top: 30px;
+				}
+				.comet-circle{
+					height: 720px;
+					width: 720px;
+					position: absolute;
+					border-radius: 100%;
+					animation: rotate-anticlockwise 250s infinite;
+					// @include transition;
+					.comet.upper{
+						position: absolute;
+						transform: translate(58px, 60px) rotate(-18deg);
+					}
+					.comet.lower{
+						position: absolute;
+						transform: translate(381px, 654px) rotate(186deg);
+					}
+				}
+			}
+			&.circle-1 {
+				height: 240px;
+				width: 480px;
+				border-radius: 240px 240px 0 0;
+				box-shadow: 0 0 180px 60px $orange-shadow;
+				z-index: 3;
+				.comet-circle{
+					height: 480px;
+					width: 480px;
+					position: absolute;
+					border-radius: 100%;
+					// @include transition;
+					animation: rotate-clockwise 250s infinite;
+					.comet.upper{
+						position: absolute;
+						transform: translate(337px, 31px) rotate(9deg)
+					}
+					.comet.lower{
+						position: absolute;
+						transform: translate(125px, 423px) rotate(-196deg);
+					}
+				}
+				.circle-inner{
+					position: absolute;
+					background: #E7EBEE;
+					height: 60px;
+					width: 60px;
+					border-radius: 50%;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					margin: auto;
+					text-align: center;
+					line-height: 60px;
+					font-size: 14px;
+					color: $fg-gray;
+					z-index: 10;
+					@include transition;
+					&.lg-html{
+						transform: translate(-180px, 60px);
+						&:hover{
+							transform: translate(-180px, 60px) scale(1.2);
+						}
+					}
+					&.lg-css{
+						transform: translate(-60px, -60px);
+						&:hover{
+							transform: translate(-60px, -60px) scale(1.2);
+						}
+					}
+					&.lg-ruby{
+						transform: translate(180px, 60px);
+						&:hover{
+							transform: translate(180px, 60px) scale(1.2);
+						}
+					}
+					&.lg-js{
+						transform: translate(120px, -20px);
+						height: 70px;
+						width: 70px;
+						line-height: 70px;
+						&:hover{
+							transform: translate(120px, -20px) scale(1.2);
+						}
+					}
+				}
+				.content-wrapper .circle-heading {
+					position: absolute;
+					bottom: 45px;
+					left: 0;
+					right: 0;
+				}
+			}
+		}
+	}
+}
+#slide5{
 	background-color: $primary-color;
 	background-image:url('../img/world.png');
 	background-size:cover;
@@ -523,6 +782,9 @@ nav#primary_nav{
 	}
 }
 @media all and (max-width: 1030px){
+	#slide4{
+		display: none;
+	}
 	#slide2{
 		height:900px;
 	}
