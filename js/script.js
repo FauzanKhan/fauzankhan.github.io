@@ -3,28 +3,28 @@ $(document).ready(function(){
 	var window_height = $(window).height();
 	var window_width =  $(window).width();
 	if(window_height >= 540)
-		$('.slide').not('#slide4').css('height', window_height+'px');
+		$('.slide').not('#skills').css('min-height', window_height+'px');
 	else{
-		$('.slide').not('#slide4').css('height', '900px');
-		$('#slide1').css('height', '700px');
+		$('.slide').not('#skills').css('min-height', '900px');
+		$('#home').css('min-height', '700px');
 	}
 	if(window_width <= 520)
-			$('#slide2').css('height', '1500px');
+			$('#portfolio').css('min-height', '1500px');
 	else if(window_width < 1030)
-			$('#slide2').css('height', '900px');	
+			$('#portfolio').css('min-height', '900px');	
 	$(window).resize(function(){
 		window_height = $(window).height();
 		window_width =  $(window).width();
 		if(window_height >= 540)
-			$('.slide').not('#slide4').css('height', window_height+'px');
+			$('.slide').not('#skills').css('min-height', window_height+'px');
 		else{
-			$('.slide').css('height', '900px');
-			$('#slide1').css('height', '700px');
+			$('.slide').css('min-height', '900px');
+			$('#home').css('min-height', '700px');
 		}
 		if(window_width <= 520)
-			$('#slide2').css('height', '1500px');
+			$('#portfolio').css('min-height', '1500px');
 		else if(window_width < 1030)
-			$('#slide2').css('height', '900px');
+			$('#portfolio').css('min-height', '900px');
 	});
 	
 	var scrolled = $(document).scrollTop();

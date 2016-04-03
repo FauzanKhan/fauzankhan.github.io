@@ -116,6 +116,7 @@ nav#primary_nav{
 			
 			small{
 				font-size:28px;
+				vertical-align: 8px;
 			}
 		}
 		
@@ -181,7 +182,7 @@ nav#primary_nav{
 			}
 		}
 	}
-#slide1{
+#home{
 	background:url('../img/workspace2.jpg');
 	background-size:cover;
 	-webkit-background-size:cover;
@@ -223,7 +224,7 @@ nav#primary_nav{
 				margin-left: -8px;}
 			}
 	}
-#slide2{
+#portfolio{
 	background:rgb(240,240,240);
 	background-size:cover;
 	-webkit-background-size:cover;
@@ -344,7 +345,7 @@ nav#primary_nav{
 				display:block;
 			}
 }
-#slide3{
+#about{
 	/*background:lighten($primary-color, 2%);*/
 	background: url('../img/me2.jpg');
 	background-size:cover;
@@ -356,12 +357,12 @@ nav#primary_nav{
 	.about_me{
 		text-align:left;
 		line-height:150%;
-		font-size:18px;
+		font-size:16px;
 		p{
 			line-height: 30px;
 			word-spacing: 4px;
 			letter-spacing: .4px;
-			margin-top: 20px;
+			margin-top: 18px;
 		}
 		p.hello{
 			font-size: 26px;
@@ -405,7 +406,7 @@ nav#primary_nav{
 		z-index:1;
 	}
 }
-#slide4{
+#skills{
 	padding-bottom: 0px;
 	height: 840px;
 	a.next_slide{
@@ -637,6 +638,28 @@ nav#primary_nav{
 							transform: translate(120px, -20px) scale(1.2);
 						}
 					}
+					&.framework{
+						border: 1px solid rgba(29, 54, 93, .2);
+						background: #FFF;
+						color: $primary-color;
+					}
+					&.lg-ror{
+						transform: translate(270px, 33px);
+					}
+					&.lg-zf{
+						transform: translate(-180px, -100px);
+						height: 70px;
+						width: 70px;
+						line-height: 70px;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+					&.lg-bs{
+						transform: translate(-265px);
+					}
+					&.lg-ng{
+						transform: translate(150px, -120px);
+					}
 				}
 				.content-wrapper .circle-heading {
 					position: absolute;
@@ -648,7 +671,7 @@ nav#primary_nav{
 		}
 	}
 }
-#slide5{
+#contact{
 	background-color: $primary-color;
 	background-image:url('../img/world.png');
 	background-size:cover;
@@ -784,16 +807,16 @@ nav#primary_nav{
 	}
 }
 @media all and (max-width: 1030px){
-	#slide4, .navigation li.skills{
+	#skills, .navigation li.skills{
 		display: none;
 	}
-	#slide2{
+	#portfolio{
 		height:900px;
 	}
 }
 
 @media all and (max-width: 990px){
-	#slide3{
+	#about{
 		.about_me{
 			font-size:15px;
 		}
@@ -801,11 +824,11 @@ nav#primary_nav{
 }
 
 @media all and (max-width: 520px){
-	#slide2{
+	#portfolio{
 		height:1500px;
 	}
 	
-	#slide1{
+	#home{
 		.intro_content{
 			h1{
 				font-size:60px;
@@ -821,7 +844,7 @@ nav#primary_nav{
 }
 
 @media all and (max-width: 680px){
-	#slide3{
+	#about{
 		.about_me{
 			font-size:12px;
 		}
@@ -829,7 +852,7 @@ nav#primary_nav{
 }
 
 @media all and (max-width: 440px){
-	#slide3{
+	#about{
 		.about_me{
 			font-size:8px;
 		}
