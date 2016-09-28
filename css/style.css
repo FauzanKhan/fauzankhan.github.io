@@ -74,6 +74,7 @@ nav#primary_nav li.active {
 .main .slide {
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -199,9 +200,13 @@ nav#primary_nav li.active {
   background-repeat: no-repeat;
   position: relative;
 }
+#portfolio .prominent-projects {
+  margin-bottom: -2px;
+}
 #portfolio .projects_wrapper {
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
+  padding-bottom: 150px;
 }
 #portfolio .projects_wrapper a {
   color: #FFF;
@@ -211,16 +216,30 @@ nav#primary_nav li.active {
   height: 250px;
   width: 250px;
   oveflow: hidden;
-  border: 1px solid #CCC;
+  /*border:1px solid #CCC;*/
   text-align: left;
   position: relative;
+}
+#portfolio .projects_wrapper .project.project-lg {
+  width: 504px;
 }
 #portfolio .projects_wrapper .project img {
   position: absolute;
   top: 100px;
 }
+#portfolio .projects_wrapper .bms {
+  background: #D51A21;
+  border: 1px solid #c7181f;
+  margin-left: -6px;
+}
+#portfolio .projects_wrapper .bms img {
+  width: 300px;
+  -webkit-transform: translate(93px, -26px);
+  transform: translate(93px, -26px);
+}
 #portfolio .projects_wrapper .regy {
   background: #CC181E;
+  border: 1px solid #be161c;
 }
 #portfolio .projects_wrapper .regy img {
   -webkit-transform: scale(0.8);
@@ -229,15 +248,27 @@ nav#primary_nav li.active {
 }
 #portfolio .projects_wrapper .simplifica {
   background: #00a2e8;
+  border: 1px solid #009ee3;
+  margin-right: -6px;
 }
 #portfolio .projects_wrapper .simplifica img {
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
-  margin-left: -18px;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  margin-left: 106px;
   margin-top: -25px;
+}
+#portfolio .projects_wrapper .innovaccer {
+  background: #191E31;
+  border: 1px solid #141827;
+}
+#portfolio .projects_wrapper .innovaccer img {
+  width: 220px;
+  margin-left: 10px;
+  margin-top: -10px;
 }
 #portfolio .projects_wrapper .oldpf {
   background: #b5e61d;
+  border: 1px solid #acdb18;
 }
 #portfolio .projects_wrapper .oldpf img {
   -webkit-transform: scale(0.5);
@@ -247,6 +278,7 @@ nav#primary_nav li.active {
 }
 #portfolio .projects_wrapper .venuemonk {
   background: #54136d;
+  border: 1px solid #4a1160;
 }
 #portfolio .projects_wrapper .venuemonk img {
   -webkit-transform: scale(0.7);
@@ -293,6 +325,9 @@ nav#primary_nav li.active {
 }
 #portfolio .project:hover .project_info {
   display: block;
+}
+#portfolio .project:hover {
+  border: 1px solid #1d365d;
 }
 
 #about {
@@ -409,10 +444,10 @@ nav#primary_nav li.active {
   transform: translate(1em, -10em);
 }
 #skills .skills-circles .point.point-4 {
-  transform: translate(-26.5em, 10.5em);
+  transform: translate(-32.3em, 17.5em);
 }
 #skills .skills-circles .point.point-5 {
-  transform: translate(29.5em, 11em);
+  transform: translate(34.9em, 18em);
 }
 #skills .skills-circles .point .content {
   position: relative;
@@ -762,7 +797,35 @@ nav#primary_nav li.active {
   }
 
   #portfolio {
-    height: 900px;
+    /*height:900px;*/
+  }
+  #portfolio .prominent-projects {
+    margin-bottom: 0;
+  }
+  #portfolio .project-lg {
+    width: 250px !important;
+  }
+  #portfolio .project-lg.simplifica {
+    margin-right: 0 !important;
+  }
+  #portfolio .project-lg.simplifica img {
+    -webkit-transform: scale(0.8) !important;
+    -moz-transform: scale(0.8) !important;
+    -ms-transform: scale(0.8) !important;
+    -o-transform: scale(0.8) !important;
+    transform: scale(0.8) !important;
+    margin-left: -14px;
+  }
+  #portfolio .project-lg.bms {
+    margin-left: 0 !important;
+  }
+  #portfolio .project-lg.bms img {
+    -webkit-transform: translate(22px, -15px) !important;
+    -moz-transform: translate(22px, -15px) !important;
+    -ms-transform: translate(22px, -15px) !important;
+    -o-transform: translate(22px, -15px) !important;
+    transform: translate(22px, -15px) !important;
+    width: 200px;
   }
 }
 @media all and (max-width: 990px) {
@@ -772,7 +835,7 @@ nav#primary_nav li.active {
 }
 @media all and (max-width: 520px) {
   #portfolio {
-    height: 1500px;
+    /*height:1500px;*/
   }
 
   #home .intro_content h1 {

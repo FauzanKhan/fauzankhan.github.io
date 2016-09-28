@@ -2,16 +2,19 @@ $(document).ready(function(){
 	$(window).stellar();
 	var window_height = $(window).height();
 	var window_width =  $(window).width();
-	if(window_height >= 540)
+	if(window_height >= 540){
 		$('.slide').not('#skills').css('min-height', window_height+'px');
+	}
 	else{
 		$('.slide').not('#skills').css('min-height', '900px');
 		$('#home').css('min-height', '700px');
 	}
-	if(window_width <= 520)
-			$('#portfolio').css('min-height', '1500px');
-	else if(window_width < 1030)
-			$('#portfolio').css('min-height', '900px');	
+	if(window_width <= 520){
+		$('#portfolio').css('min-height', '1500px');
+	}
+	else if(window_width < 1030){
+		$('#portfolio').css('min-height', '900px');
+	}
 	$(window).resize(function(){
 		window_height = $(window).height();
 		window_width =  $(window).width();

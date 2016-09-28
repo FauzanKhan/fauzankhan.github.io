@@ -73,7 +73,7 @@ nav#primary_nav{
 			}
 		a:hover{
 			text-decoration:none;
-			}
+			} 
 		}
 		  
 	.navigation{
@@ -101,6 +101,7 @@ nav#primary_nav{
 	.slide{
 		width:100%;
 		height:100%;
+		min-height: 100vh;
 		position:relative;
 		overflow:hidden;
 		text-align:center;
@@ -232,10 +233,15 @@ nav#primary_nav{
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	position:relative;
+
+	.prominent-projects{
+		margin-bottom: -2px;
+	}
 	
 	.projects_wrapper{
-		margin-top:50px;
+		margin-top:20px;
 		text-align:center;
+		padding-bottom: 150px;
 		
 		a{
 			color:#FFF;
@@ -246,19 +252,32 @@ nav#primary_nav{
 			height:250px;
 			width:250px;
 			oveflow:hidden;
-			border:1px solid #CCC;
+			/*border:1px solid #CCC;*/
 			text-align:left;
 			position:relative;
-			
+			&.project-lg{
+				width: 504px;
+			}
 			img{
 				position:absolute;
 				top:100px;
 			}
 		}
+
+		.bms{
+			background: #D51A21;
+			border: 1px solid darken(#D51A21, 3%);
+			margin-left: -6px;
+			img{
+				width: 300px;
+				-webkit-transform: translate(93px, -26px);
+				transform: translate(93px, -26px);	
+			}
+		}
 		
 		.regy{
 			background:#CC181E;
-			
+			border: 1px solid darken(#CC181E, 3%);
 			img{
 				-webkit-transform:scale(.8);
 				transform:scale(.8);
@@ -268,18 +287,29 @@ nav#primary_nav{
 		
 		.simplifica{
 			background:rgb(0,162,232);
-			
+			border: 1px solid darken(rgb(0,162,232), 1%);
+			margin-right: -6px;
 			img{
-				-webkit-transform:scale(.8);
-				transform:scale(.8);
-				margin-left:-18px;
+				-webkit-transform:scale(1.2);
+				transform:scale(1.2);
+				margin-left:106px;
 				margin-top:-25px;
+			}
+		}
+
+		.innovaccer{
+			background: #191E31;//#DA4848;
+			border: 1px solid darken(#191E31, 3%);
+			img{
+				width: 220px;
+				margin-left: 10px;
+				margin-top: -10px;
 			}
 		}
 		
 		.oldpf{
 			background:rgb(181,230,29);
-			
+			border: 1px solid darken(rgb(181,230,29), 3%);
 			img{
 				-webkit-transform:scale(.5);
 				transform:scale(.5);
@@ -290,7 +320,7 @@ nav#primary_nav{
 		
 		.venuemonk{
 			background:rgb(84, 19, 109);
-			
+			border: 1px solid darken(rgb(84, 19, 109), 3%);
 			img{
 				-webkit-transform:scale(.7);
 				transform:scale(.7);
@@ -332,18 +362,21 @@ nav#primary_nav{
 				margin-top:80px;
 				padding:0px 5px;
 				-webkit-animation-name: fadeInUp;
-          		animation-name: fadeInUp;
+          				animation-name: fadeInUp;
 				-webkit-animation-duration: 500ms;
-		  	    animation-duration: 1s;
-			    -webkit-animation-fill-mode: both;
-          		animation-fill-mode: both;
+			  	    animation-duration: 1s;
+				    -webkit-animation-fill-mode: both;
+          				animation-fill-mode: both;
 			}
 			
 		}
 	}
 	.project:hover .project_info{
-				display:block;
-			}
+		display:block;
+	}
+	.project:hover{
+		border: 1px solid $primary-color; 
+	}
 }
 #about{
 	/*background:lighten($primary-color, 2%);*/
@@ -453,10 +486,10 @@ nav#primary_nav{
 				transform: translate(1em, -10.0em);
 			}
 			&.point-4 {
-				transform: translate(-26.5em, 10.5em);
+				transform:translate(-32.3em, 17.5em);
 			}
 			&.point-5 {
-				transform: translate(29.5em, 11em);
+				transform: translate(34.9em, 18em);
 			}
 			.content {
 				position: relative;
@@ -811,7 +844,35 @@ nav#primary_nav{
 		display: none;
 	}
 	#portfolio{
-		height:900px;
+		/*height:900px;*/
+		.prominent-projects{
+			margin-bottom: 0;
+		}
+		.project-lg{
+			width: 250px !important;
+			&.simplifica{
+				margin-right: 0 !important;
+				img{
+					-webkit-transform:scale(0.8) !important;
+					-moz-transform:scale(0.8) !important;
+					-ms-transform:scale(0.8) !important;
+					-o-transform:scale(0.8) !important;
+					transform:scale(0.8) !important;
+					margin-left: -14px;
+				}
+			}
+			&.bms{
+				margin-left: 0 !important;
+				img{
+					-webkit-transform: translate(22px, -15px) !important;
+					-moz-transform: translate(22px, -15px) !important;
+					-ms-transform: translate(22px, -15px) !important;
+					-o-transform: translate(22px, -15px) !important;
+					transform: translate(22px, -15px) !important;
+					width: 200px;
+				}
+			}
+		}
 	}
 }
 
@@ -825,7 +886,7 @@ nav#primary_nav{
 
 @media all and (max-width: 520px){
 	#portfolio{
-		height:1500px;
+		/*height:1500px;*/
 	}
 	
 	#home{
