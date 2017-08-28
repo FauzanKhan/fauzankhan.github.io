@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	$(window).stellar();
 	var window_height = $(window).height();
 	var window_width =  $(window).width();
 	if(window_height >= 540){
@@ -8,12 +7,17 @@ $(document).ready(function(){
 	else{
 		$('.slide').not('#skills').css('min-height', '900px');
 		$('#home').css('min-height', '700px');
+		$('#about').css('min-height', '1600px');
 	}
 	if(window_width <= 520){
 		$('#portfolio').css('min-height', '1500px');
 	}
 	else if(window_width < 1030){
 		$('#portfolio').css('min-height', '900px');
+		$(window).stellar();
+	}
+	else {
+		$(window).stellar();
 	}
 	$(window).resize(function(){
 		window_height = $(window).height();
@@ -23,13 +27,14 @@ $(document).ready(function(){
 		else{
 			$('.slide').css('min-height', '900px');
 			$('#home').css('min-height', '700px');
+			$('#about').css('min-height', '1600px');
 		}
 		if(window_width <= 520)
 			$('#portfolio').css('min-height', '1500px');
 		else if(window_width < 1030)
 			$('#portfolio').css('min-height', '900px');
 	});
-	
+
 	var scrolled = $(document).scrollTop();
 	$(document).scroll(function(){
 		scrolled = $(document).scrollTop();
@@ -59,6 +64,6 @@ $(document).ready(function(){
 		}
 	  });
 	});
-	
-		
+
+
 });
