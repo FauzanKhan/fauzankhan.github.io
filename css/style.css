@@ -395,6 +395,11 @@ nav#primary_nav li.active {
 
 .project-image-container img {
   width: 100%;
+  min-height: 276px;
+}
+
+.flaconi img {
+  min-height: 620px;
 }
 
 .hubspot {
