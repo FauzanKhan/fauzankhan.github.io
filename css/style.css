@@ -390,8 +390,41 @@ nav#primary_nav li.active {
 
 .testimonial-person-name {
   font-weight: 600;
+  margin-top: 30px;
   margin-bottom: 0px;
   color: #FF6B35;
+}
+
+.gallery-cell {
+  width: 90%;
+  margin: 0 8px;
+}
+
+.flickity-button {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  text-align: center;
+  transition: all 500ms ease;
+  color: #FFF;
+
+  &:hover {
+    background: rgba(29, 54, 93, 0.9);
+  }
+}
+
+.flickity-page-dots {
+  bottom: -48px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  width: 18px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.flickity-page-dots .dot {
+  background: #FF6B35;
 }
 
 .quote-icon {
