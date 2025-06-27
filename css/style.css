@@ -363,7 +363,7 @@ nav#primary_nav li.active {
 
 .testimonial-card {
   width: 100%;
-  min-height: 300px;
+  min-height: 600px;
   background-color: #FFF;
   color: #1d365d;
   border-radius: 4px;
@@ -372,12 +372,16 @@ nav#primary_nav li.active {
   line-height: 32px;
   text-align: left;
   position: relative;
+  height: 100%;
   box-shadow:
     0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075),
     0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075),
     0 16px 16px hsl(0deg 0% 0% / 0.075);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .testimonial-card u {
@@ -395,8 +399,14 @@ nav#primary_nav li.active {
   color: #FF6B35;
 }
 
+.carousel-cell {
+  height: 100%;
+}
+
+
 .gallery-cell {
   width: 90%;
+  min-height: 100%;
   margin: 0 8px;
 }
 
@@ -1227,12 +1237,20 @@ nav#primary_nav li.active {
   #about .about_me {
     font-size: 15px;
   }
+
+  .testimonial-card {
+    min-height: 800px;
+  }
 }
 
 @media all and (max-width: 767px) {
   .stat-border-right {
     border-right: none;
     border-bottom: 1px solid #FFF;
+  }
+
+  .testimonial-card {
+    min-height: 1000px;
   }
 }
 
@@ -1243,6 +1261,10 @@ nav#primary_nav li.active {
 
   .brand-logo {
     transform: scale(0.6) translate(-108px, -80px);
+  }
+
+  .testimonial-card {
+    min-height: 1400px;
   }
 
   #portfolio {
