@@ -363,10 +363,9 @@ nav#primary_nav li.active {
 }
 
 .testimonial-card {
-  width: 100%;
-  min-height: 600px;
   background-color: #FFF;
   color: #1d365d;
+  margin-bottom: 30px;
   border-radius: 4px;
   padding: 24px;
   font-size: 18px;
@@ -385,19 +384,22 @@ nav#primary_nav li.active {
   justify-content: space-between;
 }
 
-.testimonial-card u {
-  font-weight: bold;
-}
 
 .testimonial-quote {
   position: relative;
 }
 
-.testimonial-person-name {
+.testimonial-person-name,
+.testimonial-person-name a {
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: 0px;
   color: #FF6B35;
+  text-decoration: underline;
+}
+
+.testimonial-person-name .fa-external-link {
+  font-size: 14px;
 }
 
 .carousel-cell {
