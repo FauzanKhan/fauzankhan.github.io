@@ -83,10 +83,29 @@ nav#primary_nav .navigation li a {
   font-weight: bold;
   padding-top: 22px;
   padding-bottom: 22px;
+  position: relative;
+
+  &:before {
+    content: ' ';
+    width: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #FFF;
+    transition: all 200ms ease-in-out;
+  }
 }
 
 nav#primary_nav .navigation li a:hover {
-  background: #1d365d;
+  /* background: #1d365d; */
+  text-decoration: none;
+
+  &:before {
+    width: 80%;
+  }
 }
 
 nav#primary_nav li.active {
