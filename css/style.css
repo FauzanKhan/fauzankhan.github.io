@@ -382,7 +382,7 @@ nav#primary_nav li.active {
   margin-bottom: 30px;
   border-radius: 4px;
   overflow: hidden;
-  border: 1px solid #efefef;
+  border: 1px solid #1d365d;
 }
 
 .project-image-container {
@@ -495,12 +495,12 @@ nav#primary_nav li.active {
 }
 
 .service-border-right {
-  border-right: 1px solid #EAEAEA;
+  border-right: 1px solid #1d365d;
 }
 
 
 .service-border-bottom {
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #1d365d;
 }
 
 .service-card {
@@ -995,6 +995,7 @@ nav#primary_nav li.active {
 
 #contact .contact_wrapper .social {
   font-size: 18px;
+  margin-bottom: 30px;
 }
 
 #contact .contact_wrapper .social a {
@@ -1187,6 +1188,15 @@ nav#primary_nav li.active {
   .carousel-wrapper {
     position: relative;
     margin-top: 200 px;
+  }
+
+  #home .intro_content h1 {
+    font-size: 32px;
+    height: auto;
+  }
+
+  #home .intro_content h1 span {
+    font-size: 40px;
   }
 }
 
