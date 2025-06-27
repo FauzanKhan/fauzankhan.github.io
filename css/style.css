@@ -324,8 +324,9 @@ nav#primary_nav li.active {
 }
 
 .carousel-wrapper {
-  position: absolute;
-  bottom: 200px;
+  /* position: absolute; */
+  margin-top: 20vh;
+  margin-bottom: 120px;
   width: 100%;
 }
 
@@ -473,6 +474,12 @@ nav#primary_nav li.active {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.projects-showcase,
+.testimonials-slide,
+.services-slide {
+  padding-bottom: 120px;
 }
 
 
@@ -1205,33 +1212,6 @@ nav#primary_nav li.active {
   .navigation li.skills {
     display: none;
   }
-
-  #portfolio {
-    /*height:900px;*/
-  }
-
-  #portfolio .prominent-projects {
-    margin-bottom: 0;
-  }
-
-  #portfolio .project-lg {
-    width: 250px !important;
-  }
-
-  #portfolio .project-lg.simplifica {
-    margin-right: 0 !important;
-  }
-
-  #portfolio .project-lg.simplifica img {}
-
-  #portfolio .project-lg.bms {
-    margin-left: 0 !important;
-  }
-
-  #portfolio .project-lg.goeuro {
-    margin-left: 0 !important;
-  }
-
 }
 
 @media all and (max-width: 990px) {
