@@ -641,6 +641,7 @@ nav#primary_nav .navigation li a:hover {
 
     nav#primary_nav .navigation {
         width: 100%;
+        background-color: var(--color-black-lighten-10);
     }
 
     .navbar-toggle {
