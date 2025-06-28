@@ -235,7 +235,7 @@ nav#primary_nav .navigation li a:hover {
 #home {
     background-color: var(--color-black-lighten-10);
     color: var(--color-white);
-    /* background-image: url('/assets/svgs/pattern-hero.svg'); */
+    background-image: url('/assets/svgs/pattern-hero.svg');
 }
 
 .hero-banner {
@@ -290,6 +290,8 @@ nav#primary_nav .navigation li a:hover {
     margin-top: 120px;
     text-align: center;
     width: 100%;
+    padding-bottom: 40px;
+    background: radial-gradient(ellipse 130% 60% at center, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0.5) 45%, rgba(0, 0, 0, 0.3) 70%, transparent 100%);
 }
 
 .carousel-title {
