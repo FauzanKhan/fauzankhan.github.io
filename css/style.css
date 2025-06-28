@@ -216,7 +216,7 @@ nav#primary_nav .navigation li a:hover {
     text-align: center;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 5px;
     height: 6px;
 }
@@ -227,7 +227,7 @@ nav#primary_nav .navigation li a:hover {
 
 ::-webkit-scrollbar-track {
     background: rgba(29, 54, 93, 0.4);
-}
+} */
 
 /* ====== End Global Styles ======== */
 
