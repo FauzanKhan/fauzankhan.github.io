@@ -143,6 +143,10 @@ nav#primary_nav.scrolled_nav .navigation li a {
     }
 }
 
+nav#primary_nav.scrolled_nav .contact-button {
+    border-radius: 4px;
+}
+
 nav#primary_nav .navigation li a:hover {
     text-decoration: none;
 
@@ -153,6 +157,7 @@ nav#primary_nav .navigation li a:hover {
 
 .contact-button {
     background: var(--color-primary);
+    border-radius: 0 0 4px 4px;
 }
 
 /* ====== End Nav Bar Styles ======== */
@@ -478,6 +483,23 @@ nav#primary_nav .navigation li a:hover {
 .testimonial-quote {
     position: relative;
 }
+
+.quote-icon {
+    opacity: .1;
+    /* position: absolute; */
+    font-size: 22px !important;
+}
+
+/* .quote-icon-left {
+    left: 0;
+    top: 0px;
+}
+
+.quote-icon-right {
+    bottom: 0px;
+    right: 0px;
+} */
+
 
 .testimonial-person-name,
 .testimonial-person-name a {
