@@ -349,6 +349,7 @@ nav#primary_nav .navigation li a:hover {
 .project-image-container img {
     width: 100%;
     min-height: 276px;
+    object-fit: cover;
 }
 
 .flaconi img {
@@ -559,6 +560,7 @@ nav#primary_nav .navigation li a:hover {
 
 #contact .social {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 #contact .social a {
@@ -660,6 +662,12 @@ nav#primary_nav .navigation li a:hover {
         border-bottom: 1px solid var(--color-white);
     }
 
+    nav#primary_nav.navbar-fixed-top {
+        position: relative;
+        background-color: var(--color-black-lighten-10);
+        margin-bottom: 0;
+    }
+
     nav#primary_nav .navigation {
         width: 100%;
         background-color: var(--color-black-lighten-10);
@@ -677,10 +685,6 @@ nav#primary_nav .navigation li a:hover {
 @media all and (max-width: 520px) {
     #contact .email-link {
         font-size: 28px;
-    }
-
-    .brand-logo {
-        transform: scale(0.6) translate(-108px, -80px);
     }
 
     #home .intro_content h1 {
