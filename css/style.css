@@ -526,12 +526,27 @@ nav#primary_nav .navigation li a:hover {
     padding-bottom: 0;
 }
 
-.footer {
+.footer-content {
+    margin-bottom: 4px;
+    text-align: center;
     border-top: 1px solid var(--color-black-lighten-10);
-    background-color: var(--color-black-lighten-10);
-    color: var(--color-white);
-    padding: 36px 0 44px 0;
-    font-size: 20px;
+    color: var(--color-black-lighten-10);
+    padding: 24px 16px 48px 16px;
+    font-size: 16px;
+    font-weight: var(--font-weight-bold);
+    display: flex;
+    justify-content: space-between;
+}
+
+.built-with {
+    display: inline-flex;
+    align-items: center;
+}
+
+.heart-icon {
+    animation: 1.5s ease 0s infinite beat;
+    margin-left: 4px;
+    color: rgb(208, 20, 20);
 }
 
 #contact .drop-para {
@@ -627,6 +642,20 @@ nav#primary_nav .navigation li a:hover {
         transform: translate(-50%, 0);
     }
 
+}
+
+@keyframes beat {
+
+    0%,
+    50%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    30%,
+    80% {
+        transform: scale(0.92, 0.95);
+    }
 }
 
 /* ====== End Animations ======== */
