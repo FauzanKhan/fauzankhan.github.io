@@ -136,6 +136,13 @@ nav#primary_nav .navigation li a {
     }
 }
 
+nav#primary_nav.scrolled_nav .navigation li a {
+    &:before {
+        height: 4px;
+        border-radius: 2px 2px 0 0;
+    }
+}
+
 nav#primary_nav .navigation li a:hover {
     text-decoration: none;
 
@@ -517,12 +524,14 @@ nav#primary_nav .navigation li a:hover {
     font-size: 34px;
     padding: 43px 0px;
     display: inline-block;
-    color: var(--color-black-lighten-10);
-    border-bottom: 1px solid var(--color-black-lighten-10);
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
     padding-bottom: 8px;
     line-height: 32px;
+    transition: all 200ms ease;
 
     &:hover {
+
         text-decoration: none;
     }
 }
