@@ -338,6 +338,25 @@ nav#primary_nav .navigation li a:hover {
     border: 1px solid var(--color-black-lighten-10);
 }
 
+.project-link {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.project-link:hover .project-title h4 {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.project-link:hover .project-overlay {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
 .project-image-container {
     width: 100%;
     padding: 40px;
