@@ -166,9 +166,7 @@ nav#primary_nav .navigation li a:hover {
 /* ====== Start Global Styles ======== */
 
 .slide {
-    min-height: 100vh;
     width: 100%;
-    height: 100%;
     padding-bottom: 120px;
     position: relative;
     overflow: hidden;
@@ -236,6 +234,7 @@ nav#primary_nav .navigation li a:hover {
     background-color: var(--color-black-lighten-10);
     color: var(--color-white);
     background-image: url('/assets/svgs/pattern-hero.svg');
+    min-height: 100vh;
 }
 
 .hero-banner {
@@ -325,6 +324,34 @@ nav#primary_nav .navigation li a:hover {
 .client-logo img {
     height: 40px;
     margin: 0 16px;
+}
+
+.main .slide .next_slide {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    border-radius: 100%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    opacity: .5;
+    background: var(--color-black-lighten-10);
+    border: var(--color-black-lighten-10);
+    text-align: center;
+    transition: background, margin-bottom 500ms ease;
+}
+
+.main .slide .next_slide span.fa {
+    color: #FFF;
+    font-size: 36px;
+    padding-top: 6px;
+}
+
+.main .slide .next_slide:hover {
+    background: var(--color-primary);
+    margin-bottom: -10px;
+    -webkit-transition: background, margin-bottom 500ms ease;
+    transition: background, margin-bottom 500ms ease;
 }
 
 /* ====== End Home Section ======== */
@@ -545,6 +572,41 @@ nav#primary_nav .navigation li a:hover {
     justify-content: space-between;
     padding-bottom: 0;
     min-height: 80vh;
+}
+
+#contact .book-call-button {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 0 24px;
+    margin-top: 80px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: all 200ms ease;
+
+    &::before {
+        content: ' ';
+        height: 100%;
+        width: 0%;
+        background: var(--color-primary);
+        top: 0;
+        left: 0;
+        z-index: -1;
+        position: absolute;
+        transition: all 200ms ease;
+    }
+}
+
+#contact .book-call-button:hover {
+    color: var(--color-white);
+
+    &::before {
+        width: 100%;
+    }
 }
 
 .footer-content {
