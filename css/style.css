@@ -44,13 +44,9 @@ body {
 /* ====== Start Nav Bar Styles ======== */
 
 .brand-logo {
-    background: url(../img/brand.svg);
     height: 42px;
     width: 100px;
     margin: 10px 0 6px 0;
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
     display: inline-block;
 }
 
@@ -659,6 +655,7 @@ nav#primary_nav .navigation li a:hover {
 
 #contact .social {
     text-align: center;
+    margin-top: 80px;
     margin-bottom: 120px;
 }
 
@@ -714,6 +711,21 @@ nav#primary_nav .navigation li a:hover {
 #contact .social .li:hover {
     border-color: #043653;
     background: #0976b4;
+}
+
+.calendar-container {
+    text-align: center;
+    background: var(--color-peter-river-light);
+    border-radius: 4px;
+    padding: 24px;
+    border: 1px solid var(--color-black-lighten-10);
+    min-height: 673px;
+}
+
+.calendar-container h4 {
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 16px;
 }
 
 
