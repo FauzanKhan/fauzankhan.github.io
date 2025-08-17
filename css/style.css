@@ -256,6 +256,11 @@ nav#primary_nav .navigation li a:hover {
     line-height: 36px;
 }
 
+.main .slide .careeer-stat-heading h3 {
+    font-family: "Nunito", tahoma;
+    font-size: 24px;
+}
+
 .stat-container {
     padding: 40px;
     display: inline-block;
@@ -787,7 +792,10 @@ nav#primary_nav .navigation li a:hover {
 @media all and (max-width: 767px) {
     .stat-border-right {
         border-right: none;
-        border-bottom: 1px solid var(--color-white);
+    }
+
+    .stat-border-top {
+        border-top: none;
     }
 
     nav#primary_nav.navbar-fixed-top {
@@ -817,6 +825,7 @@ nav#primary_nav .navigation li a:hover {
 
     #home .intro_content h1 {
         font-size: 60px;
+        text-align: center;
         height: auto;
     }
 
@@ -825,7 +834,8 @@ nav#primary_nav .navigation li a:hover {
     }
 
     #home .intro_content p {
-        font-size: 12px;
+        font-size: 18px;
+        text-align: center;
     }
 }
 
